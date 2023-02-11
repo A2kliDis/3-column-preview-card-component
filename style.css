@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root,
+:host {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+  --font-BigShouldersDisplay: "Big Shoulders Display", cursive;
+  --font-lexendDeca: "Lexend Deca", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: calc(var(--width) / 3) calc(var(--width) / 3) calc(
+      var(--width) / 3
+    );
+  --width: 45rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 2rem;
+  padding: 2rem;
+}
+.content:nth-child(1) {
+  background-color: var(--Bright-orange);
+}
+.content:nth-child(2) {
+  background-color: var(--Dark-cyan);
+}
+.content:nth-child(3) {
+  background-color: var(--very-dark-cyan);
+}
+
+.icon img {
+  height: 2rem;
+}
+
+.title {
+  text-transform: uppercase;
+  color: var(--Very-light-gray);
+  font-family: var(--font-BigShouldersDisplay);
+  font-weight: bold;
+}
+
+.description {
+  color: var(--Transparent-white);
+  line-height: 1.5;
+  font-family: var(--font-lexendDeca);
+  margin-bottom: 3rem;
+  font-size: small;
+}
+
+.btn-LM > a > input {
+  background-color: var(--Very-light-gray);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10rem;
+  font-family: var(--font-lexendDeca);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: 0.15rem solid var(--Very-light-gray);
+}
+.btn-LM > a > #b-col1 {
+  color: var(--Bright-orange);
+}
+.btn-LM > a > #b-col2 {
+  color: var(--Dark-cyan);
+}
+.btn-LM > a > #b-col3 {
+  color: var(--very-dark-cyan);
+}
+
+.btn-LM > a > input:hover {
+  background-color: transparent;
+  color: var(--Very-light-gray) !important;
+}
