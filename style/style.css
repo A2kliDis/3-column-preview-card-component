@@ -68,7 +68,7 @@ main {
   font-size: small;
 }
 
-.btn-LM > a > input {
+.btn-LM > input {
   background-color: var(--Very-light-gray);
   border: none;
   padding: 0.7rem 1.5rem;
@@ -78,17 +78,17 @@ main {
   transition: all 0.5s ease-in-out;
   border: 0.15rem solid var(--Very-light-gray);
 }
-.btn-LM > a > #b-col1 {
+.btn-LM > #b-col1 {
   color: var(--Bright-orange);
 }
-.btn-LM > a > #b-col2 {
+.btn-LM > #b-col2 {
   color: var(--Dark-cyan);
 }
-.btn-LM > a > #b-col3 {
+.btn-LM > #b-col3 {
   color: var(--very-dark-cyan);
 }
 
-.btn-LM > a > input:hover {
+.btn-LM > input:hover {
   background-color: transparent;
   color: var(--Very-light-gray) !important;
 }
