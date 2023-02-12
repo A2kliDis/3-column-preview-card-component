@@ -92,3 +92,24 @@ main {
   background-color: transparent;
   color: var(--Very-light-gray) !important;
 }
+
+@media screen and (max-width: 450px) {
+  main {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto auto auto;
+    width: 16.5rem;
+  }
+  .content {
+    gap: 1.5rem;
+  }
+  .description {
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    --width: calc(100vw / 3) - 3rem;
+  }
+}
